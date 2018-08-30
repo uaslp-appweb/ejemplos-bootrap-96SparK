@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <form novalidate class="needs-validation">
+            <div class="form-row form-group">
+                <label class="col-md-3">Usuario</label>
+                <input class="col-md-3" type="text" class="form-control" required>
+            </div>
+            <div class="row">
+                <input type="submit" class="form-control btn btn-primary col-md-3 offset-md-3">
+                <a href="#" class="col-md-3">Olvidaste la contraseña</a>
+            </div>
+        </form>
+        <script>
+            var formulario = document.getElementById('formulario');
+            formulario.addEventListener('submit',function(evento){
+                if(this.checkValidaty() == false)
+            })
+            </script>
+    </div>
+</body>
+
+</html>
